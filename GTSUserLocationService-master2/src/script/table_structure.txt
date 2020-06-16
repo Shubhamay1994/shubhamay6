@@ -1,0 +1,16 @@
+create table users 
+(
+id              int NOT NULL,
+email       varchar(256)  NOT NULL,
+password    varchar(256)  NOT NULL,
+name        varchar(256) NOT NULL,
+PRIMARY KEY(email),
+UNIQUE (id)
+);
+---------------------------
+{
+ "id" : "1",
+ "email" : "abc@hotmail.de",
+ "password" :   "bbbbb",
+ "name" : "sunny"
+}

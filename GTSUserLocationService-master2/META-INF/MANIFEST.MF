@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: GTSUserProfileService-master2
+Bundle-SymbolicName: GTSUserProfileService-master2
+Bundle-Version: 1.0.0.qualifier
+Export-Package: com.sunny.trainer,
+ com.users,
+ com.users.controllers,
+ com.users.controllers.exceptions,
+ com.users.model,
+ com.users.repositories,
+ com.users.security.config

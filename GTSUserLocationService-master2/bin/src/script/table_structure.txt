@@ -1,0 +1,39 @@
+create table trainer 
+(
+trainer_id               int NOT NULL AUTO_INCREMENT,
+created          TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+first_name       varchar(256) NOT NULL,
+last_name        varchar(256) NOT NULL,
+mobile           int NOT NULL,
+theory_ratings   int ,
+app_dev_ratings  int,
+email            varchar(256) NOT NULL,
+description      varchar(2048),
+PRIMARY KEY(trainer_id)
+);
+-----------------------------------------------------------
+{
+  "first_name" : "aaa",
+  "last_name"  : "AAA",
+  "mobile"     : "012345",
+  "theory_ratings" : "1",
+  "app_dev_ratings" : "2",
+   "email" : "abc@gmail.com",
+   "description" : "the best Trainer"
+}
+==========================================================
+
+create table skill
+(
+skill_id               int NOT NULL AUTO_INCREMENT,
+skill_type       varchar(256) NOT NULL,
+trainer_id       int NOT NULL,
+PRIMARY KEY (skill_id),
+FOREIGN KEY (trainer_id) REFERENCES trainer(trainer_id)
+);
+-----------------------------------------------
+{
+ "skill_type" : "Java 8",
+ "trainer" : "/trainers/1"
+}
+=============================================================
